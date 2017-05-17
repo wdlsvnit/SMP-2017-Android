@@ -1,12 +1,12 @@
-# SMP2017 - Android - *Nikunj*
+# SMP2017 - Android - *Nikunj* [![Build Status](Build Passing)](https://travis-ci.org/nik1010/Android_App-Samples)
 
 ## Repo Framework :
 
-* smp2017-android-nikunj
-  * udacity-projects
-    1.UdacityLayout1[![Build Status](Build Passing)](https://travis-ci.org/nik1010/Android_App-Samples/builds/233231664)
-  * final-projects
- 
+
+* [Udacity-projects](https://github.com/gdgsurat/SMP-2017-Android/tree/master/smp2017-android-nikunj/udacity-projects)
+* [Final-projects](https://github.com/gdgsurat/SMP-2017-Android/tree/master/smp2017-android-nikunj/final-projects)
+* [CS50-Solutions](https://github.com/gdgsurat/SMP-2017-Android/tree/master/smp2017-android-nikunj/CS50-solutions)
+
     
 
 

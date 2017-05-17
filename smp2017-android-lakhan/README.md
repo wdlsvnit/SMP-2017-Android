@@ -3,5 +3,5 @@
 ## Repo Framework :
 
 * smp2017-android-lakhan
-  * smp2017-android-lakhan-cs50
-  * smp2017-android-lakhan-udacity
+  * CS50 Solutions
+  * Udacity

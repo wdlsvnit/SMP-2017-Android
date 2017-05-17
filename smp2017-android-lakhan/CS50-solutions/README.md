@@ -1,1 +1,1 @@
-#CS50 Solutions
+# CS50 Solutions

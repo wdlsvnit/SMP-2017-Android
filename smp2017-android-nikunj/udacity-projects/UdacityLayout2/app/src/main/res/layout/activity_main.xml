@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nik1010.udacitylayout2.MainActivity"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimary"
+            android:padding="5dp"
+            android:text="Infotech Solutions"
+            android:textAlignment="textEnd"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:id="@+id/txt"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/secons"
+            android:text="Make It Easy"
+            android:textAlignment="textEnd"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="50dp"
+        android:text="Address: \nGali number 2 , Chinchpokli Bandar , Khaugali ,Mumbai "
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="50dp"
+        android:text="Contact : khokharnikunj8@gmail.com"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="5dp"/>
+
+
+
+</LinearLayout>

@@ -3,7 +3,7 @@
 ## Repo Framework :
 
 * smp2017-android-nikunj
-  * udacity-projects [![Build Status](Build Passing)](https://travis-ci.org/nik1010/Android_App-Samples/builds/233231664)
+  * udacity-projects [![Build Status](https://travis-ci.org/nik1010/Android_App-Samples.svg?branch=master)](https://travis-ci.org/nik1010/Android_App-Samples/builds/233231664)
   * final-projects
  
     

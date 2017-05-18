@@ -1,5 +1,5 @@
-#UdacityLayout5
+# UdacityLayout5
 
-##Android Layout similiar to Gmail compose mail
+## Android Layout similiar to Gmail compose mail
 
-![Layout](http://i.imgur.com/0qVl3Hf.png)
+![Layout](http://i.imgur.com/0qVl3Hf.png | width=100)

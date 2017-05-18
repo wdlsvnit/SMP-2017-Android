@@ -14,6 +14,8 @@
 
   * UdacityLayout4[![Build Status](https://travis-ci.org/nik1010/Android_App-Samples.svg?branch=master)](https://travis-ci.org/nik1010/Android_App-Samples/builds/233586609)
 
+  * UdacityLayout5[![Build Status](https://travis-ci.org/nik1010/Android_App-Samples.svg?branch=master)](https://travis-ci.org/nik1010/Android_App-Samples/builds/233627229)
+
 
 * [Final-projects](https://github.com/gdgsurat/SMP-2017-Android/tree/master/smp2017-android-nikunj/final-projects)
 

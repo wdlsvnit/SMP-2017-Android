@@ -1,0 +1,9 @@
+questions.txt
+
+Computer Science 50
+Problem Set 3
+
+0. 3x3 5x5 7x7 9x9
+1. 2d array
+2. greet()
+3. init(), draw(),move(),won()

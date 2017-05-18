@@ -2,4 +2,4 @@
 
 ## Android Layout similiar to Gmail compose mail
 
-![Layout](http://i.imgur.com/0qVl3Hf.png =250x)
+<img src="http://i.imgur.com/0qVl3Hf.png" width="200" height="200" />

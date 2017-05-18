@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UdacityLayout5</string>
+    <string-array name="ids">
+        <item>
+            khokharnikunj8@gmail.com
+        </item>
+        <item>nikunjkhokhar27@gmail.com</item>
+
+    </string-array>
+
+</resources>

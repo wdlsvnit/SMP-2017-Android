@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nikunj.stopwatch.MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:titleTextColor="#FFFFFF"
+        app:subtitleTextColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:minHeight="80dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ToolBarPopUpTheme" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@+id/linear"
+        android:background="@android:drawable/alert_light_frame" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="50dp"
+            android:textSize="45sp"
+            android:text="00:00:00"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list"
+            android:layout_below="@id/time"
+            android:transcriptMode="alwaysScroll"
+           />
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="80dp"
+        android:id="@+id/linear"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Start"
+            android:id="@+id/start"
+            android:layout_below="@id/time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="2dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:foreground="?android:attr/selectableItemBackground"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Stop"
+            android:id="@+id/stop"
+            android:layout_below="@id/start"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:foreground="?android:attr/selectableItemBackground"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Reset"
+            android:id="@+id/reset"
+            android:layout_below="@id/stop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="2dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

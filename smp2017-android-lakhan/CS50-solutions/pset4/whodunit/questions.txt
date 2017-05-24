@@ -1,0 +1,35 @@
+1.  stdint.h is a header file that specifies exact width integer types.
+
+2.  These specify how we want to use data
+    uint8_t - 8 bit unsigned int value
+    uint32_t- 32 bit unsigned int value
+    int32_t - 32 bit signed int value
+    uint16_t- 16 bit unsigned int value
+
+3.  BYTE -  1 byte
+    DWORD - 4 byte
+    LONG -  4 byte
+    WORD -  2 byte
+
+4.  ASCII - "BM"
+    Hex   -  0x42 0x4D
+
+5.  bfSize - it is the size of whole file which include all the header files
+    biSize - it is the size of BITMAPINFOHEADER header file which is constant i.e 40.
+
+6. biHeight - Specifies the height of the bitmap, in pixels. For uncompressed RGB bitmaps, if biHeight is positive, the bitmap is a bottom-up DIB with the origin at the lower left corner. If biHeight is negative, the bitmap is a top-down DIB with the origin at the upper left corner.
+
+7.  biBitCount
+
+8.  if the file does not exist 
+   or it is protected with some permissions like read only , or write protected
+    in these cases it might return NULL.
+    
+9.  it is the quantity that we require there,
+    so we need only need to read one struct at a time.
+    
+10.padding will be assigned a value of 3.
+
+11. it moves to the specific location in file.
+
+12. Specifies that offset is a count of characters from the current file position. This count may be positive or negative. 

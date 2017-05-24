@@ -1,4 +1,11 @@
-CS50 Solutions
-  _pset1
-  _pset2
-  _pset3
+# SMP2017 - Android
+
+## FrameWork
+* CS50 Solution
+  * PSET1
+  * PSET2
+  * PSET3
+  
+  
+* Udacity Projects
+  * Happy Birthday

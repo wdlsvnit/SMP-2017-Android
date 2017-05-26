@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lakhan.happybirthday.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/AndroidParty"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy Birthday !!"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        android:textColor="#fff"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-light"/>
+
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From Lakhan :)"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="36dp"
+        android:textStyle="bold|italic"
+        android:textColor="#fff"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-light"/>
+
+</RelativeLayout>
+

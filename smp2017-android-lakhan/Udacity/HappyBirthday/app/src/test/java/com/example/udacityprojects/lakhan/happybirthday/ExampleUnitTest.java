@@ -1,4 +1,4 @@
-package com.example.lakhan.happybirthday;
+package com.example.udacityprojects.lakhan.happybirthday;
 
 import org.junit.Test;
 

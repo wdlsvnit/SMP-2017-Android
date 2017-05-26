@@ -1,4 +1,4 @@
-package com.example.lakhan.happybirthday;
+package com.example.udacityprojects.lakhan.happybirthday;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.lakhan.happybirthday", appContext.getPackageName());
+        assertEquals("com.example.udacityprojects.lakhan.happybirthday", appContext.getPackageName());
     }
 }

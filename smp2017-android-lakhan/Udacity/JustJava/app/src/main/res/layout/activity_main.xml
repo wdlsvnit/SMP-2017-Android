@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+    tools:context="com.example.udacityprojects.lakhan.justjava.MainActivity">
+
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Quantity"
+        android:textAllCaps="true"
+        android:textColor="#9e9e9e"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/decrease"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="decrement"
+            android:text="-" />
+
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:text="2"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/increase"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:onClick="increment"
+            android:text="+" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="price"
+        android:textAllCaps="true"
+        android:textColor="#9e9e9e"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="$10.00"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:onClick="submitOrder"
+        android:text="Order" />
+
+
+</LinearLayout>
+

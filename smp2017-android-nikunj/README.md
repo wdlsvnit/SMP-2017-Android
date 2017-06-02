@@ -7,6 +7,8 @@
   * ListView
     * SimpleListView
     * CustomListView
+  * RecyclerView
+    * SimpleRecyclerView
 
 
 * [Udacity-projects](https://github.com/gdgsurat/SMP-2017-Android/tree/master/smp2017-android-nikunj/udacity-projects)
@@ -27,3 +29,4 @@
   * StopWatch    
 
 * [CS50-Solutions](https://github.com/gdgsurat/SMP-2017-Android/tree/master/smp2017-android-nikunj/CS50-solutions)
+    * PSET1

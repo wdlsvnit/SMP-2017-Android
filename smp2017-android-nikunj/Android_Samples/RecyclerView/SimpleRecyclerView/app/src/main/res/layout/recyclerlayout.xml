@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:elevation="5dp"
+    android:layout_width="match_parent" android:layout_height="200dp">
+    <ImageView
+        android:id="@+id/recycleimage"
+        android:layout_width="200dp"
+        android:src="@drawable/image1"
+        android:padding="1dp"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent" />
+    <TextView
+        android:textStyle="italic"
+        android:id="@+id/recycletext1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_purple"
+        android:layout_toRightOf="@+id/recycleimage"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/recycletext2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@+id/recycleimage"
+        android:layout_below="@+id/recycletext1"/>
+</RelativeLayout>

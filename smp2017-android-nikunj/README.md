@@ -7,6 +7,8 @@
   * ListView
     * SimpleListView
     * CustomListView
+        - Using ArrayAdaper
+        - Using BaseAdapter
   * RecyclerView
     * SimpleRecyclerView
 

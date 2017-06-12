@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/nikunj/.android/build-cache/ff48c634fc161f62a446d314ef32b34bed18876b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/home/nikunj/AndroidStudioProjects/CustomListView/app/build/intermediates/pre-dexed/debug/classes_2470c7cfcf2ff978ce1077daf02e960331d1c00f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nikunj/.android/build-cache/f7252764adc408dbef634769da8181b100295958/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/home/nikunj/AndroidStudioProjects/CustomListView/app/build/intermediates/pre-dexed/debug/classes_d39aade9431cb4123bf7d2b7b5f26b45a13a0e73.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nikunj/.android/build-cache/a4101ad4d3c9ac6822b2412b608fa1699f9ec607/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/home/nikunj/AndroidStudioProjects/CustomListView/app/build/intermediates/pre-dexed/debug/classes_ea4066297ec3f19b4a0cd21fa573e62fcae596c5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/AndroidStudioProjects/CustomListView/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="/home/nikunj/AndroidStudioProjects/CustomListView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_703e08dd0045442f1212e8fa6aded43df8480699/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nikunj/.android/build-cache/af2bdaa33ebe2faedaa20e5c5d868616da153cdb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/nikunj/AndroidStudioProjects/CustomListView/app/build/intermediates/pre-dexed/debug/classes_f53a74abe7e73fa4b7c46dba3b29af148e324dd4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nikunj/.android/build-cache/4edfca638feadb79b316e50e67e7467ebfa2c4f5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/home/nikunj/AndroidStudioProjects/CustomListView/app/build/intermediates/pre-dexed/debug/classes_98e7ed44d8c158e7015dd198f311e632c899e6ed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nikunj/.android/build-cache/9be51ffd1021ac806305591dd7e6311f6b9f4924/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/home/nikunj/AndroidStudioProjects/CustomListView/app/build/intermediates/pre-dexed/debug/classes_311079e1a235130d279a5547fbb1ae5f504f6c4e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nikunj/.android/build-cache/e8e2599870708b91eba9146846bc91aa64a33383/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/home/nikunj/AndroidStudioProjects/CustomListView/app/build/intermediates/pre-dexed/debug/classes_bf237a01e26815d6b6b769d7dc93b83e0592ff73.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nikunj/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/home/nikunj/AndroidStudioProjects/CustomListView/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_62d15dc1b2ec82f8c87430c879cad13b0ceaf797.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nikunj/.android/build-cache/64bf8010f784cdf29b540c1ec4066b787dafce3b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/home/nikunj/AndroidStudioProjects/CustomListView/app/build/intermediates/pre-dexed/debug/classes_1849c253602c8aab818e77bd761459be5f6ef079.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nikunj/.android/build-cache/85120f48389bf05c60b6da371e639fc0ad1259b3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/nikunj/AndroidStudioProjects/CustomListView/app/build/intermediates/pre-dexed/debug/classes_300bd1f25808ae7cd369947150bd5aa68fa443f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nikunj/.android/build-cache/3dfd2d2e8fb486a67e214edfe0f8d798f6fc4f9a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/home/nikunj/AndroidStudioProjects/CustomListView/app/build/intermediates/pre-dexed/debug/classes_53f8ddd6bab7c929a026080bbbfa17be70c16f3d.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/AndroidStudioProjects/CustomListView/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f8a770b80bf8b351ad706fb1bd89b5508bc3296f">
+        <dex dex="/home/nikunj/AndroidStudioProjects/CustomListView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_95c5211de5308d8e643301c6c352dcf821bb5766/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nikunj/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/nikunj/AndroidStudioProjects/CustomListView/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_769924b15704af31578ecee86e1c79e39b363286.jar" />
+    </item>
+
+</items>

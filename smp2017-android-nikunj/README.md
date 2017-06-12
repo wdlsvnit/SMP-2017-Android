@@ -7,8 +7,13 @@
   * ListView
     * SimpleListView
     * CustomListView
+        - Using ArrayAdaper
+        - Using BaseAdapter
   * RecyclerView
     * SimpleRecyclerView
+
+  * TabView
+    * SimpleTabView
 
 
 * [Udacity-projects](https://github.com/gdgsurat/SMP-2017-Android/tree/master/smp2017-android-nikunj/udacity-projects)
@@ -27,6 +32,8 @@
 * [Final-projects](https://github.com/gdgsurat/SMP-2017-Android/tree/master/smp2017-android-nikunj/final-projects)
 
   * StopWatch    
+  * Android API
+  * ACM Leaderboard
 
 * [CS50-Solutions](https://github.com/gdgsurat/SMP-2017-Android/tree/master/smp2017-android-nikunj/CS50-solutions)
     * PSET1

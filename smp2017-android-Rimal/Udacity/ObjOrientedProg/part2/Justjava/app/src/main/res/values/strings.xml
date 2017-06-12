@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Just Java</string>
+    <string name="name">Name</string>
+    <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=20] -->
+    <string name="toppings">Toppings</string>
+
+</resources>

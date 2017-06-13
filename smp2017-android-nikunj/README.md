@@ -15,6 +15,9 @@
   * TabView
     * SimpleTabView
 
+  * Toolbar
+    * SimpleToolbar
+
 
 * [Udacity-projects](https://github.com/gdgsurat/SMP-2017-Android/tree/master/smp2017-android-nikunj/udacity-projects)
 
@@ -34,6 +37,7 @@
   * StopWatch    
   * Android API
   * ACM Leaderboard
+
 
 * [CS50-Solutions](https://github.com/gdgsurat/SMP-2017-Android/tree/master/smp2017-android-nikunj/CS50-solutions)
     * PSET1

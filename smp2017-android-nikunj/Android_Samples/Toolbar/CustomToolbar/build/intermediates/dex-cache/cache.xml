@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/IdeaProjects/My1/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/home/nikunj/IdeaProjects/My1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-26.0.0-alpha1_3817752a8d48306ba91eecde771bd28f16877b39/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/IdeaProjects/My1/app/build/intermediates/exploded-aar/com.android.support/design/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="/home/nikunj/IdeaProjects/My1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-26.0.0-alpha1_7984f07c294d9ec11a17f896bcabd476e18644d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/IdeaProjects/My1/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/home/nikunj/IdeaProjects/My1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-26.0.0-alpha1_055217255481fda8823d8eff0e51f388ed919d70/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/IdeaProjects/My1/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="bb012a66474bca1062f3ef9d513f8a070b53ab38">
+        <dex dex="/home/nikunj/IdeaProjects/My1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_df52e0c8dfe511085deedaf13e1c3303f577dcd2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/home/nikunj/IdeaProjects/My1/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.0.0-alpha1_1e2cf7c879d13965877bcaf9c271c843534c0acb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/IdeaProjects/My1/app/build/intermediates/exploded-aar/com.android.support/support-fragment/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/home/nikunj/IdeaProjects/My1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-26.0.0-alpha1_732b881b3a0b79f983fe3f31c1d2dbedb1fbd0f0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/IdeaProjects/My1/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="cb101d5ee0b77223cf47f05f3f2d9aac1a949998">
+        <dex dex="/home/nikunj/IdeaProjects/My1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_e282405aa44e1d4f7d0020d7917f144a4de944c8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/IdeaProjects/My1/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/home/nikunj/IdeaProjects/My1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-26.0.0-alpha1_231f3e61147644da3bfe679928b861993128205a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/IdeaProjects/My1/app/build/intermediates/exploded-aar/com.android.support/transition/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="/home/nikunj/IdeaProjects/My1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-26.0.0-alpha1_c4aadb1db80f6dc8441caddc80674b5238afc7a8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/IdeaProjects/My1/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/home/nikunj/IdeaProjects/My1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-26.0.0-alpha1_cb55f28ab6861a1f461bbfd21aa84f1a9b61b707/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/IdeaProjects/My1/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/home/nikunj/IdeaProjects/My1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-26.0.0-alpha1_00054b3084032ebdfb3d850f56de3ab24ae84255/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/IdeaProjects/My1/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="/home/nikunj/IdeaProjects/My1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-26.0.0-alpha1_56fe1919fd71156ee85c8346240918c257e9c182/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/IdeaProjects/My1/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/home/nikunj/IdeaProjects/My1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-26.0.0-alpha1_48c3b26fd225d39439a3773962b48ab3be360a07/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/IdeaProjects/My1/app/build/intermediates/exploded-aar/com.android.support/support-v4/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/nikunj/IdeaProjects/My1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-26.0.0-alpha1_5d81aa4e786c800f1ad820de657cf7c9dc448c8d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/IdeaProjects/My1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/home/nikunj/IdeaProjects/My1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-26.0.0-alpha1_155528952e84ed7c652f042f385642c35660e9bf/classes.dex" />
+    </item>
+
+</items>

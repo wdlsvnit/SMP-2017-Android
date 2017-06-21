@@ -17,6 +17,7 @@
 
   * Toolbar
     * SimpleToolbar
+    * CustomToolbar
 
 
 * [Udacity-projects](https://github.com/gdgsurat/SMP-2017-Android/tree/master/smp2017-android-nikunj/udacity-projects)

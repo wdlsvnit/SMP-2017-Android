@@ -1,0 +1,24 @@
+1.  TODO
+Stdint is a header file which when included allows us to use data types like uint8_t etc. 
+2.  TODO
+These are not primitive data types but are used to store values which are 8 bit, 16 bit etc
+3.  TODO
+BYTE 8, DWORD 32, WORD16, LONG32
+4.  TODO
+BM
+5.  TODO
+biSize has size of BITMAPINFOHEADER, bfsize has size of complete image.
+6.  TODO
+Pixels are stored top to bottom
+7.  TODO
+biBitCount
+8.  TODO
+File fails to open
+9.  TODO
+Third arguement is how we want to read that amount of data we always want it as once.
+10. TODO
+3
+11. TODO
+Sets position of cursor in file
+12. TODO
+It is a value denoting current position of cursor in file

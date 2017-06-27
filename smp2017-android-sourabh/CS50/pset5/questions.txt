@@ -1,0 +1,22 @@
+0.  TODO
+Lung disease caused by inhaling dust or fine ash particles, largest word in dictionary
+1.  TODO
+getrusage() returns resource usage measures for who
+2.  TODO
+16
+3.  TODO
+As copying large structs take time and also uses up memory, therefore passed by address.
+4.  TODO
+We use fgetc() function to read each character from the text which is checked until EOF is received,
+furthur each character is checked whether its alphabetical or an apostrophe, if its not, that word is
+consumed and not sent for checking, with each character read, an index increases which is the length
+of the word, if it goes beyond 45, it is not considered as a word. Also, when the char is neither a 
+digit nor an alphabet it is considered that a word is found.
+
+5.  TODO
+fscanf reads a string till a whitespace character, however it doesnt check whether there is any digit
+in the string or is it alphabetical, also it will read the string as a word even if it is gibberish
+and more than 45 words. Therefore we use fgetc().
+
+6.  TODO
+The parameters are constant so that the values arent changed by the program. We do not want to mistakenly somehow change the input text.

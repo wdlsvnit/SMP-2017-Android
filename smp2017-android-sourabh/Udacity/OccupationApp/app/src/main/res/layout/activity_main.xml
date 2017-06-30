@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.occupationapp.MainActivity">
+    <ImageView
+        android:id="@+id/shop_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/_20170630_205158"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/shop_name"
+        android:layout_height="wrap_content"
+        android:text="Shop Name:Rajeev General Store"
+        android:padding="4dp"
+        android:textSize="28sp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingLeft="4dp"
+        android:layout_below="@id/shop_name"
+        android:textSize="28sp"
+        android:text="Contact Number"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingBottom="4dp"
+        android:layout_below="@id/contact"
+        android:textSize="16sp"
+        android:text="9456065561\n8273112488"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingBottom="4dp"
+        android:layout_below="@id/number"
+        android:textSize="28sp"
+        android:text="Contact id"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingBottom="4dp"
+        android:layout_below="@id/email"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="shivamvarshney1510@gmail.com\nrajeev.varshney7@gmail.com"/>
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingBottom="4dp"
+        android:layout_below="@id/id"
+        android:textSize="28sp"
+        android:text="Address"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/permanent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingBottom="4dp"
+        android:layout_below="@id/address"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="Kacchla Road,\nOpposite to Panchmukhi Mandir,\nUjhani(Badaun)"/>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingBottom="4dp"
+        android:layout_below="@id/permanent"
+        android:textSize="28sp"
+        android:text="Description"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingBottom="4dp"
+        android:layout_below="@id/description"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="Shop where you can find all general things \nyou want"/>
+    <TextView
+        android:id="@+id/working"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingBottom="4dp"
+        android:layout_below="@id/information"
+        android:textSize="28sp"
+        android:text="Working Hours"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingBottom="4dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/working"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="8 am to 9 pm"/>
+</RelativeLayout>

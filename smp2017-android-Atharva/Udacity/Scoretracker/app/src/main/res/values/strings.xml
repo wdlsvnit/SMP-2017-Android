@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Scoretracker</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string-array name="teams">
+        <item>Real Madrid</item>
+        <item>Barcelona</item>
+    </string-array>
+</resources>

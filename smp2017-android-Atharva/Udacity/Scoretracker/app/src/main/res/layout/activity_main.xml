@@ -10,24 +10,36 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:padding="10dp"
-        android:weightSum="2">
+        android:weightSum="3">
 
         <Spinner
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/home_spinner"
             android:layout_gravity="start"
+            android:spinnerMode="dialog"
+            android:prompt="@string/prompt_home"
             android:layout_weight="1"
             android:entries="@array/teams" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="V/S"
+            android:onClick="onClickSet"
+            android:id="@+id/button_set"/>
 
         <Spinner
             android:id="@+id/away_spinner"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:spinnerMode="dialog"
+            android:prompt="@string/prompt_away"
             android:layout_gravity="end"
             android:layout_weight="1"
             android:entries="@array/teams"/>
@@ -37,13 +49,13 @@
     <RelativeLayout
        android:layout_width="match_parent"
        android:layout_height="100dp"
-       android:layout_marginTop="20dp">
+       android:layout_marginTop="10dp">
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_alignParentLeft="true"
-            android:src="@drawable/realmadridlogo1"
+
             android:id="@+id/home_team"/>
 
         <Button
@@ -51,29 +63,31 @@
             android:layout_height="45dp"
             android:id="@+id/plus_home"
             android:text="@string/plus"
+            android:background="@drawable/round_button"
             android:gravity="center"
             android:padding="10dp"
             android:layout_toRightOf="@id/home_team"
             android:layout_alignParentTop="true"
-            android:onClick="onClickGoals"/>
+            android:onClick="onClickButton"/>
 
         <Button
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:id="@+id/minus_home"
             android:text="@string/minus"
+            android:background="@drawable/round_button"
             android:padding="10dp"
             android:gravity="center"
             android:layout_toRightOf="@id/home_team"
             android:layout_alignParentBottom="true"
-            android:onClick="onClickGoals"/>
+            android:onClick="onClickButton"/>
 
         <TextView
             android:layout_width="25dp"
             android:layout_height="match_parent"
             android:id="@+id/home_goals"
             android:padding="1dp"
-            android:text="00"
+            android:text="0"
             android:textSize="20sp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:gravity="center"
@@ -95,7 +109,7 @@
             android:layout_height="match_parent"
             android:id="@+id/away_goals"
             android:padding="1dp"
-            android:text="00"
+            android:text="0"
             android:textSize="20sp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:gravity="center"
@@ -107,35 +121,39 @@
             android:padding="10dp"
             android:id="@+id/plus_away"
             android:text="@string/plus"
+            android:background="@drawable/round_button"
             android:gravity="center"
             android:layout_toLeftOf="@+id/away_team"
             android:layout_alignParentTop="true"
-            android:onClick="onClickGoals"/>
+            android:onClick="onClickButton"/>
 
         <Button
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:id="@+id/minus_away"
             android:padding="10dp"
-            android:text="@string/minus"
+            android:text="-"
             android:gravity="center"
+            android:background="@drawable/round_button"
             android:layout_toLeftOf="@+id/away_team"
             android:layout_alignParentBottom="true"
-            android:onClick="onClickGoals"/>
+            android:onClick="onClickButton"/>
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:id="@+id/away_team"
-            android:src="@drawable/barcelonalogo1"
+
             android:layout_alignParentRight="true"/>
 
      </RelativeLayout>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/test"/>
+        android:id="@+id/test"
+        android:gravity="center"
+        android:textSize="20dp"/>
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -146,7 +164,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_row="0"
             android:layout_column="0"
             android:layout_columnSpan="4">
@@ -168,11 +186,13 @@
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/home_foul_plus"
-                android:layout_marginLeft="2dp"/>
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClickButton"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10"
+                android:text="0"
                 android:textSize="20sp"
                 android:gravity="center"
                 android:layout_gravity="center_vertical"
@@ -186,7 +206,9 @@
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/home_foul_minus"
-                android:layout_marginLeft="2dp"/>
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClickButton"/>
             <Button
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -195,11 +217,13 @@
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/away_foul_plus"
-                android:layout_marginLeft="2dp"/>
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClickButton"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10"
+                android:text="0"
                 android:textSize="20sp"
                 android:gravity="center"
                 android:layout_gravity="center_vertical"
@@ -213,16 +237,20 @@
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/away_foul_minus"
-                android:layout_marginLeft="2dp"/>
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClickButton"/>
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RESET"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/round_button"
                 android:gravity="center"
-                android:layout_gravity="center_vertical"
+                android:layout_gravity="center_vertical|end"
                 android:padding="2dp"
+                android:drawableStart="@drawable/reset_button"
                 android:id="@+id/reset_foul"
-                android:layout_marginLeft="2dp"/>
+                android:onClick="onClickReset"/>
 
         </LinearLayout>
 
@@ -231,7 +259,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_row="1"
             android:layout_column="0"
             android:layout_columnSpan="4">
@@ -253,11 +281,13 @@
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/home_yellow_plus"
-                android:layout_marginLeft="2dp"/>
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClickButton"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10"
+                android:text="0"
                 android:textSize="20sp"
                 android:layout_gravity="center_vertical"
                 android:id="@+id/home_yellow"
@@ -270,7 +300,9 @@
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/home_yellow_minus"
-                android:layout_marginLeft="2dp"/>
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClickButton"/>
             <Button
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -279,11 +311,13 @@
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/away_yellow_plus"
-                android:layout_marginLeft="2dp"/>
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClickButton"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10"
+                android:text="0"
                 android:gravity="center"
                 android:layout_gravity="center_vertical"
                 android:textSize="20sp"
@@ -297,16 +331,20 @@
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/away_yellow_minus"
-                android:layout_marginLeft="2dp"/>
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClickButton"/>
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RESET"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
                 android:gravity="center"
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/reset_yellow"
-                android:layout_marginLeft="2dp"/>
+                android:drawableStart="@drawable/reset_button"
+                android:background="@drawable/round_button"
+                android:onClick="onClickReset"/>
 
         </LinearLayout>
 
@@ -315,7 +353,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_row="2"
             android:layout_column="0"
             android:layout_columnSpan="4">
@@ -337,11 +375,13 @@
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/home_red_plus"
-                android:layout_marginLeft="2dp"/>
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClickButton"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10"
+                android:text="0"
                 android:textSize="20sp"
                 android:gravity="center"
                 android:layout_gravity="center_vertical"
@@ -355,7 +395,9 @@
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/home_red_minus"
-                android:layout_marginLeft="2dp"/>
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClickButton"/>
             <Button
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -364,11 +406,13 @@
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/away_red_plus"
-                android:layout_marginLeft="2dp"/>
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClickButton"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10"
+                android:text="0"
                 android:textSize="20sp"
                 android:gravity="center"
                 android:layout_gravity="center_vertical"
@@ -382,16 +426,20 @@
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/away_red_minus"
-                android:layout_marginLeft="2dp"/>
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClickButton"/>
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RESET"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
                 android:gravity="center"
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/reset_red"
-                android:layout_marginLeft="2dp"/>
+                android:drawableStart="@drawable/reset_button"
+                android:background="@drawable/round_button"
+                android:onClick="onClickReset"/>
 
         </LinearLayout>
 
@@ -400,7 +448,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_row="3"
             android:layout_column="0"
             android:layout_columnSpan="4">
@@ -422,11 +470,13 @@
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/home_offside_plus"
-                android:layout_marginLeft="2dp"/>
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClickButton"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10"
+                android:text="0"
                 android:textSize="20sp"
                 android:gravity="center"
                 android:layout_gravity="center_vertical"
@@ -440,7 +490,9 @@
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/home_offside_minus"
-                android:layout_marginLeft="2dp"/>
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClickButton"/>
             <Button
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -449,11 +501,13 @@
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/away_offside_plus"
-                android:layout_marginLeft="2dp"/>
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClickButton"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10"
+                android:text="0"
                 android:textSize="20sp"
                 android:gravity="center"
                 android:layout_gravity="center_vertical"
@@ -467,19 +521,32 @@
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/away_offside_minus"
-                android:layout_marginLeft="2dp"/>
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClickButton"/>
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RESET"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
                 android:gravity="center"
                 android:layout_gravity="center_vertical"
                 android:padding="2dp"
                 android:id="@+id/reset_offside"
-                android:layout_marginLeft="2dp"/>
+                android:drawableStart="@drawable/reset_button"
+                android:background="@drawable/round_button"
+                android:onClick="onClickReset"/>
 
         </LinearLayout>
 
     </GridLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/reset_all"
+        android:text="RESET ALL"
+        android:onClick="onClickReset"/>
 
 </LinearLayout>

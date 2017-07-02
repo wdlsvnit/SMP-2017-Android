@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/AndroidStudioProjects/SwipeRefreshLayout/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/nikunj/AndroidStudioProjects/SwipeRefreshLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_39f4412085fb17cbb582a13f21ac9449aabfd0c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/nikunj/AndroidStudioProjects/SwipeRefreshLayout/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3554b9b8c6739f4267ea69424ebadc5b5a85cd32">
+        <dex dex="/home/nikunj/AndroidStudioProjects/SwipeRefreshLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0ced12ca5aa6c9880cf400192e84c7bb8cb8be0b/classes.dex" />
+    </item>
+
+</items>

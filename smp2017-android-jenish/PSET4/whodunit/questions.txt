@@ -1,0 +1,61 @@
+1.  What’s stdint.h?
+    stdint.h is a header file in the C standard library introduced in the C99 standard library section 7.18 to allow programmers to write more portable code by providing a set of typedefs that specify exact-width integer types, together with the defined minimum and maximum allowable values for each type, using macros .
+    
+2.  What’s the point of using uint8_t, uint32_t, int32_t, and uint16_t in a program?
+    1.  uint8_t
+        It truns out to unsigned char.
+        It is used for  representing BYTE.
+    2.  uint16_t
+        It truns out to unsigned short.
+        It is used for  representing WORD.
+    3.  uint32_t
+        It truns out to unsigned int.
+        It is used for representing DWORD
+        
+    4.  int32_t
+        It truns out to  int of 4 byte.
+        It representing long int.
+        
+        
+3.  How many bytes is a BYTE, a DWORD, a LONG, and a WORD, respectively?
+    1.  BYTE
+        1
+    2.  DWORD
+        4
+    3.  LONG
+        4
+    4.  WORD
+        2
+    
+4.  What (in ASCII, decimal, or hexadecimal) must the first two bytes of any BMP file be? Leading bytes used to identify file formats (with high probability) are generally called "magic numbers."
+    The first two bytes of a BMP is a WORD and denotes bfType, which specifies the file type. It must be
+ 	set to the signature word BM (0x4D42) to indicate bitmap.
+    
+5.  What’s the difference between bfSize and biSize?
+    bfSize represents the size, in bytes, of the bitmap file.
+	biSize represents the size of the structure in bytes.
+    
+6.  What does it mean if biHeight is negative?
+    If biHeight is positive, the bitmap is a bottom-up DIB (device-independent bitmap)
+	and its origin is the lower left corner.
+	
+7.  What field in BITMAPINFOHEADER specifies the BMP’s color depth (i.e., bits per pixel)?
+    biBitCount
+
+    
+8.  Why might fopen return NULL in lines 24 and 32 of copy.c?
+    fopen will return NULL if it cannot create the outfile to write to. I don't know why that might happen.
+    
+9.  Why is the third argument to fread always 1 in our code?
+    Program is reading in 1 RGB triple at a time.
+    
+    
+10. What value does line 65 of copy.c assign to padding if bi.biWidth is 3?
+    3
+    
+11. What does fseek do?
+    It moves the hypothetical cursor in a file to certain position we want.
+    
+    
+12. What is SEEK_CUR?
+    It seeks the hypothetical cursor in the file throught the amount of bits we define from the current position of the cursor.

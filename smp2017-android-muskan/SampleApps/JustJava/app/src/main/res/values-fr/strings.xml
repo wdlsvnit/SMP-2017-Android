@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Just Java</string>
+    <string name="quantitys">Quantité:</string>
+    <string name="quantity">QUANTITE</string>
+    <string name="price">$0</string>
+    <string name="space">" "</string>
+    <string name="subject">Les cafés ont commandé pour</string>
+    <string name="thank_you">" Je vous remercie"</string>
+    <string name="toastless">Vous ne pouvez pas commander moins d\'un café</string>
+    <string name="toastmore">" Vous ne pouvez pas commander plus de cent cafés"</string>
+    <string name="toppings">TOPPPINGS</string>
+    <string name="total">Total:</string>
+    <string name="whippedCream">Crème fouettée</string>
+    <string name="whipped_only">Crème fouettée ajoutée à tous les cafés</string>
+    <string name="mail">www.muskanyhms@gmail.com</string>
+    <string name="minus">-</string>
+    <string name="one">1</string>
+    <string name="order_button">commande</string>
+    <string name="order_name">Prénom: <xliff:g id="name" example="Amy">%s</xliff:g></string>
+    <string name="order_summary">" RÉCAPITULATIF DE LA COMMANDE"</string>
+    <string name="plus">+</string>
+    <string name="nothing">Aucune crème fouettée ni chocolat ajoutés à un café quelconque</string>
+    <string name="name">Prénom</string>
+    <string name="chocolate_only">Du chocolat ajouté à tous les cafés</string>
+    <string name="chocolate">Chocolat</string>
+    <string name="both">" Crème fouettée et chocolat ajouté à tous les cafés"</string>
+</resources>

@@ -2,8 +2,14 @@
     <string name="app_name">Scoretracker</string>
     <string name="plus">+</string>
     <string name="minus">-</string>
+    <string name="prompt_home">SELECT HOME TEAM</string>
+    <string name="prompt_away">SELECT AWAY TEAM</string>
     <string-array name="teams">
         <item>Real Madrid</item>
         <item>Barcelona</item>
+        <item>Chelsea</item>
+        <item>Manchester Utd.</item>
+        <item>Bayern Munich</item>
+        <item>Borrusia Dortmund</item>
     </string-array>
 </resources>

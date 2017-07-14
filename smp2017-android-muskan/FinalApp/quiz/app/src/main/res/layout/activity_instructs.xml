@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="INSTRUCTIONS:"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-light"
+        android:id="@+id/instruct"/>
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="1. The test contain 20 questions."
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@id/instruct"
+        />
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="2. You will be given ONE mark if question is answered correctly."
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@id/one"/>
+    <TextView
+        android:id="@+id/three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="3. There is no negative marking."
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@id/two"/>
+    <TextView
+        android:id="@+id/four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="4. Click the enter button for entering details."
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@id/three"/>
+
+    <TextView
+        android:id="@+id/five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:padding="4dp"
+        android:text="5. When you complete your free test you will get your score."
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_below="@id/four"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enter"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="enter"/>
+
+</RelativeLayout>

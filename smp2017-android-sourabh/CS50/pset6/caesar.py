@@ -5,7 +5,7 @@ if len(sys.argv)!=2:
 n=int(sys.argv[1])
 stri = list(input("Plaintext:"))
 
-for i in range(len(stri)):bmit
+for i in range(len(stri)):
     
     if ord(stri[i]) not in range(ord('a'),ord('z')+1) and ord(stri[i]) not in range(ord('A'),ord('Z')+1):
         continue

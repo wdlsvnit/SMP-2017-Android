@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Profit Loss</string>
+    <string name="fRequired">Field required</string>
+    <string name="eInvalid">Invalid email</string>
+    <string name="pInvalid">Minimum 8 characters</string>
+    <string name="tax_prompt">Choose Gst Rate</string>
+    <string-array name="country_gst_rates">
+        <item>Choose Gst Rate</item>
+        <item>Item under Tax Exemption Category</item>
+        <item>Item under 5% Tax Category</item>
+        <item>Item under 12% Tax Category</item>
+        <item>Item under 18% Tax Category</item>
+        <item>Item under 28% Tax Category</item>
+    </string-array>
+    <string-array name="gst_rates">
+        <item>Choose Gst Rate</item>
+        <item>0</item>
+        <item>5</item>
+        <item>12</item>
+        <item>18</item>
+        <item>28</item>
+    </string-array>
+</resources>

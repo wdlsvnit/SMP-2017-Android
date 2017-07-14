@@ -16,7 +16,7 @@ list * hashtable[HASHTABLE];
  */
  list *first;
 
-unsigned int hashjb2(char * str)
+unsigned int hash1(char * str)
 {
     unsigned long int hash = 5381;
     int c;
@@ -47,7 +47,7 @@ bool check(const char *word)
     {
         *(copy+i)=tolower(word[i]);
     }
-    unsigned int hashval = hashjb2(copy);
+    unsigned int hashval = hash1(copy);
     list * curr = hashtable[hashval];
     
     while(curr != NULL)
@@ -87,7 +87,7 @@ bool load(const char *dictionary)
                  word[i]=(char)c;
            }
             word[i]='\0';
-            unsigned int value = hashjb2(word);
+            unsigned int value = hash1(word);
             lladd(word,value);
             fgetc(inptr);
             if(feof(inptr))

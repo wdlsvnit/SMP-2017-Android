@@ -1,17 +1,16 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<cs50.h>
 #include<ctype.h>
 #include<string.h>
 
-int main(int argc , string argv[])
+int main(int argc , char **argv)
 {
-    int key = 0;
-    string s;
+    int key = 0,i;
+    char *s;
     
     if(argc!=2 || atoi(argv[1])<0)
     {
-        printf("error , give correct input");
+        printf("error , give correct input\n");
         return 1;
     }
     else 
@@ -19,13 +18,13 @@ int main(int argc , string argv[])
     
     
     printf("plaintext:  ");
-    s=get_string();
+    gets(s);
     
    int n =strlen(s);
 
      printf("ciphertext: ");
     
-    for(int i =0;i<n;i++)
+    for(i =0;i<n;i++)
     {   
      //uppercase
         if(isupper(s[i]) && isalpha(s[i]))

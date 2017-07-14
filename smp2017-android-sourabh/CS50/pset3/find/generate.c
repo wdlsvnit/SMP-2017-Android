@@ -10,8 +10,6 @@
  */
  
 #define _XOPEN_SOURCE
-
-#include <cs50.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -19,17 +17,17 @@
 // upper limit on range of integers that can be generated
 #define LIMIT 65536
 
-int main(int argc, string argv[])
+int main(int argc, char **argv)
 {
     // TODO: the input should have atleast one command line arguments
-    if (argc != 2 && argc != 3)
+    if (argc != 2 || argc != 3)
     {
         printf("Usage: ./generate n [s]\n");
         return 1;
     }
 
     // TODO: to convert from string to int
-    int n = atoi(argv[1]);
+    int i,n = atoi(argv[1]);
 
     // TODO: if they also give seed value
     if (argc == 3)
@@ -42,7 +40,7 @@ int main(int argc, string argv[])
     }
 
     // TODO: printing random number
-    for (int i = 0; i < n; i++)
+    for (i = 0; i < n; i++)
     {
         printf("%i\n", (int) (drand48() * LIMIT));
     }

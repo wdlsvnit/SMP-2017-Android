@@ -13,7 +13,6 @@
  */
  
 #define _XOPEN_SOURCE 500
-#include <cs50.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -39,10 +38,10 @@ void clear(void);
 void greet(void);
 void init(void);
 void draw(void);
-bool move(int tile);
-bool won(void);
+int move(int tile);
+int won(void);
 
-int main(int argc, string argv[])
+int main(int argc, char **argv)
 {
     // ensure proper usage
     if (argc != 2)
@@ -53,6 +52,7 @@ int main(int argc, string argv[])
 
     // ensure valid dimensions
     d = atoi(argv[1]);
+    int i,j;
     if (d < DIM_MIN || d > DIM_MAX)
     {
         printf("Board must be between %i x %i and %i x %i, inclusive.\n",
@@ -74,7 +74,7 @@ int main(int argc, string argv[])
     init();
 
     // accept moves until game is won
-    while (true)
+    while (1)
     {
         // clear the screen
         clear();
@@ -83,9 +83,9 @@ int main(int argc, string argv[])
         draw();
 
         // log the current state of the board (for testing)
-        for (int i = 0; i < d; i++)
+        for (i = 0; i < d; i++)
         {
-            for (int j = 0; j < d; j++)
+            for (j = 0; j < d; j++)
             {
                 fprintf(file, "%i", board[i][j]);
                 if (j < d - 1)
@@ -106,7 +106,8 @@ int main(int argc, string argv[])
 
         // prompt for move
         printf("Tile to move: ");
-        int tile = get_int();
+        int tile ;
+	scanf("%d",&tile);
         
         // quit if user inputs 0 (for testing)
         if (tile == 0)
@@ -161,10 +162,10 @@ void greet(void)
  */
 void init(void)
 {  // intializing in descending order
-    int k =d*d-1;
-    for(int i =0 ;i<d;i++)
+    int k =d*d-1,i,j;
+    for(i =0 ;i<d;i++)
        {
-           for(int j =0;j<d;j++)
+           for( j =0;j<d;j++)
              {
                  board[i][j] = k;
                   k--;
@@ -185,10 +186,10 @@ void init(void)
 void draw(void)
 {
     // TODO prints board
-    
-    for(int i =0 ;i<d;i++)
+    int i,j;
+    for( i =0 ;i<d;i++)
        {
-           for(int j =0;j<d;j++)
+           for(j =0;j<d;j++)
              {   
                  if(board[i][j]==0)
                   {
@@ -212,13 +213,13 @@ void draw(void)
  * If tile borders empty space, moves tile and returns true, else
  * returns false. 
  */
-bool move(int tile)
-{  int temp; //temporary variable
+int move(int tile)
+{  int temp,i,j; //temporary variable
 
     // TODO moving tile by determining its positiong with no. given
-     for(int i =0 ;i<d;i++)
+     for(i =0 ;i<d;i++)
        {
-           for(int j =0;j<d;j++)
+           for( j =0;j<d;j++)
                  if(board[i][j]==tile)
                   {  tilerow=i;
                      tilecolumn=j;
@@ -239,7 +240,7 @@ bool move(int tile)
              { temp=board[tilerow][tilecolumn];
               board[tilerow][tilecolumn] = board[blankrow][blankcolumn];
               board[blankrow][blankcolumn]=temp;
-            return true;              
+            return 1;              
           
              }
                  
@@ -252,7 +253,7 @@ bool move(int tile)
              { temp=board[tilerow][tilecolumn];
               board[tilerow][tilecolumn] = board[blankrow][blankcolumn];
               board[blankrow][blankcolumn]=temp;
-            return true;              
+            return 1;              
           
              }
                  
@@ -261,22 +262,22 @@ bool move(int tile)
        
     
     
-    return false;
+    return 0;
 }
 
 /**
  * Returns true if game is won (i.e., board is in winning configuration), 
  * else false.
  */
-bool won(void)
+int won(void)
 {
-    int k = 1;//temp variable
+    int k = 1,i,j;//temp variable
     int m =0;
      // TODO check if won
     
-     for(int i =0 ;i<d;i++)
+     for(i =0 ;i<d;i++)
        {
-           for(int j =0;j<d;j++)
+           for(j =0;j<d;j++)
              {   
                 if(board[i][j]==k )
                    {
@@ -293,7 +294,7 @@ bool won(void)
        }
        
     if(k==(d*d))
-    return true;
+    return 1;
     else
-    return false;
+    return 0;
 }

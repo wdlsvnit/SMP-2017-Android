@@ -7,16 +7,15 @@
  * where needle is the value to find in a haystack of values
  */
        
-#include <cs50.h>
 #include <stdio.h>
 #include <stdlib.h>
-
+#define INT_MAX 1000
 #include "helpers.h"
 
 // maximum amount of hay
-const int MAX = 65536;
+const int MAX = 1000;
 
-int main(int argc, string argv[])
+int main(int argc, char **argv)
 {
     // ensure proper usage
     if (argc != 2)
@@ -35,7 +34,8 @@ int main(int argc, string argv[])
     {
         // wait for hay until EOF
         printf("\nhaystack[%i] = ", size);
-        int straw = get_int();
+        int straw ;
+	scanf("%d",&straw);
         if (straw == INT_MAX)
         {
             break;

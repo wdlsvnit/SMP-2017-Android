@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.profitloss.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="209dp"
+            android:src="@mipmap/profitloss"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginBottom="25dp"/>
+        <EditText
+            android:id="@+id/uname"
+            android:hint="User Name"
+            android:inputType="textCapWords"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/pass1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/pass2"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="140dp"
+            android:text="Submit"/>
+    </LinearLayout>
+</ScrollView>

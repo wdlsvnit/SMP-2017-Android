@@ -34,8 +34,8 @@ def search():
     tweet = {texts for texts in tweets}
     for i in tweet:
         score = 0
-        t =  tokeniser.tokenize(i)
-        for j in t:
+        temp =  tokeniser.tokenize(i)
+        for j in temp:
             score+=analyzer.analyze(j)
         if score > 0.0:
             positive +=1
@@ -48,3 +48,4 @@ def search():
 
     # render results
     return render_template("search.html", chart=chart, screen_name=screen_name)
+

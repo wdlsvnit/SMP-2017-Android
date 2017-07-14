@@ -34,11 +34,11 @@ def chart(positive, negative, neutral):
     }
     return plotly.offline.plot(figure, output_type="div", show_link=False, link_text=False)
 
-def get_user_timeline(screen_name, count=200):
+def get_user_timeline(screen_name, count=100):
     """Return list of most recent tweets posted by screen_name."""
 
     # ensure count is valid
-    if count < 1 or count > 200:
+    if count < 1 or count > 100:
         raise RuntimeError("invalid count")
 
     # ensure environment variables are set

@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+<table>
+    <td colspan = 4 text-align: left font-size: 15px><strong>BOUGHT</strong></th>
+    <tr>
+        <th>STOCK</th>
+        <th>Number</th>
+        <th>Price Bought</th>
+        <th>Date/Time</th>
+    </tr>
+    {% for item in bought %}
+    {% set stock_val = lookup(item['stock']) %}
+    <tr>
+        <td>{{item["stock"]}}</td>
+        <td>{{item["num"]}}</td>
+        <td>{{item["price"]}}</td>
+        <td>{{item["date"]}}</td>
+    </tr>
+    {% endfor %}
+    
+</table>
+<br>
+<hr>
+<table>
+    <td colspan = 4 text-align: left font-size: 1px><strong>SOLD</strong></th>
+    <tr>
+        <th>STOCK</th>
+        <th>Number</th>
+        <th>Price Sold</th>
+        <th>Date/Time</th>
+    </tr>
+    {% for item in sold %}
+    {% set stock_val = lookup(item['stock']) %}
+    <tr>
+        <td>{{item["stock"]}}</td>
+        <td>{{item["num"]}}</td>
+        <td>${{item["price"]}}</td>
+        <td>{{item["date"]}}</td>
+    </tr>
+    {% endfor %}
+    
+</table>
+{% endblock %}

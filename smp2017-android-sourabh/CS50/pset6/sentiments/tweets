@@ -21,7 +21,7 @@ def main():
     tweets = get_user_timeline(sys.argv[1],50)
     if tweets == None:
         sys.exit("Check username")
-    tweet = {texts for texts in tweets}
+    tweet = {text for text in tweets}
     for i in tweet:
         score = 0
         t =  tokeniser.tokenize(i)

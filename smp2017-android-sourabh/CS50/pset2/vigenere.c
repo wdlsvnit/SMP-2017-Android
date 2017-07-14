@@ -1,28 +1,28 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<cs50.h>
 #include<ctype.h>
 #include<string.h>
 
-int main(int argc , string argv[])
+int main(int argc , char **argv)
 {
     
-    string key ;
-    
-    
+    char *key ;
+    char key1;
+    int j =0,n;
+    char s[100];
     //check if arguments are correct
     if(argc!=2 )
     { 
-        printf("error , give correct input, give 1 argument, format - ./vigenere abc");
+        printf("Error , give correct input, give 1 argument, format - ./vigenere abc\n");
         return 1;
     }
     
     key = argv[1];
-    int m =strlen(key);
+    int i,m =strlen(key);
     
-    for(int i = 0;i<m;i++)
+    for(i = 0;i<m;i++)
      { 
-           if(!isalpha(argv[1][i]))
+           if(!isalpha(key[i]))
               {
                   printf("error only alphabetical key please");
                   return 1;
@@ -31,14 +31,10 @@ int main(int argc , string argv[])
      
      
     printf("plaintext: ");
-  string  s = get_string();
-    int n =strlen(s);
-
-     printf("ciphertext: ");
-    
-    char key1;
-    int j =0;
-    for(int i =0;i<n;i++)
+    gets(s);
+    n =strlen(s);
+    printf("ciphertext: ");
+    for(i =0;i<n;i++)
     {   
         
      //uppercase

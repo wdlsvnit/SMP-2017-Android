@@ -3,20 +3,19 @@
  *
  * Helper functions for Problem Set 3.
  */
- 
-#include <cs50.h>
 
+#include<stdio.h>
 #include "helpers.h"
 
 /**
  * Returns true if value is in array of n values, else false.
  */
-bool search(int value, int values[], int n)
+int search(int value, int values[], int n)
 {
     // TODO: implement a searching algorithm
     
     if (n<=0)
-    return false;
+    return 1;
     
     int middle, start ,end;
     end = n;
@@ -27,10 +26,10 @@ bool search(int value, int values[], int n)
     middle = (start + end )/2;
     
     if (start>end)
-    return false;
+    return 0;
     
     if(values[middle] == value)
-    return true;
+    return 1;
     //right side
     else if(values[middle]<value)
         start =  middle+1;
@@ -50,8 +49,8 @@ bool search(int value, int values[], int n)
 void sort(int values[], int n)
 {
     // TODO: implement a sorting algorithm
-     int count[65536]= {0};
-     for (int i =0;i<=n;i++)
+     int count[65536]= {0},i,j;
+     for (i =0;i<=n;i++)
      {
          count[values[i]-1]++; //counting no.
      }
@@ -62,7 +61,7 @@ void sort(int values[], int n)
      //storing sorted array    
     // j for count array
     // i for values array
-    for(int j=0,i=0;i<=n;)
+    for(j=0,i=0;i<=n;)
     {
      if(count[j]>0)
      {

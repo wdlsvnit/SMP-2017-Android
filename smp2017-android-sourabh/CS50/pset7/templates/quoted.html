@@ -1,0 +1,15 @@
+{% extends "quote.html" %}
+
+{% block mainq %}
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>{{val.name}}</td>
+        <td>${{val.price}}</td>
+    </tr>
+</table>
+
+{% endblock %}

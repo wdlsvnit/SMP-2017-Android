@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<cs50.h>
 #include<stdint.h>
 #include<string.h>
 #include<math.h>
@@ -7,7 +6,7 @@
 
 #include "bmp.h"
 
-int main(int argc , string argv[])
+int main(int argc , char **argv)
 {
     // check if input is correct
     if(argc!=3)
@@ -60,13 +59,13 @@ int main(int argc , string argv[])
     fwrite(&bi, sizeof(BITMAPINFOHEADER), 1, outptr);
 
     // determine padding for scanlines
-    int padding =  (4 - (bi.biWidth * sizeof(RGBTRIPLE)) % 4) % 4;
+    int i,j,k,biHeight,padding =  (4 - (bi.biWidth * sizeof(RGBTRIPLE)) % 4) % 4;
 
     // iterate over infile's scanlines
-    for (int i = 0, biHeight = abs(bi.biHeight); i < biHeight; i++)
+    for (i = 0, biHeight = abs(bi.biHeight); i < biHeight; i++)
     {
         // iterate over pixels in scanline
-        for (int j = 0; j < bi.biWidth; j++)
+        for (j = 0; j < bi.biWidth; j++)
         {
             // temporary storage
             RGBTRIPLE triple;
@@ -77,7 +76,7 @@ int main(int argc , string argv[])
              if(triple.rgbtRed==0xff)
              {
                  triple.rgbtRed=0x00;
-                 triple.rgbtGreen=0x00;
+                 triple.rgbtGreen=0xff;
                  triple.rgbtBlue=0x00;
                  
              }
@@ -92,7 +91,7 @@ int main(int argc , string argv[])
         fseek(inptr, padding, SEEK_CUR);
 
         // then add it back (to demonstrate how)
-        for (int k = 0; k < padding; k++)
+        for (k = 0; k < padding; k++)
         {
             fputc(0x00, outptr);
         }

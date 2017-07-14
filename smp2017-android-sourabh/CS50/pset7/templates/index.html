@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    INDEX
+{% endblock %}
+
+{% block main %}
+<div>
+<table>
+    <tr>
+        <th>STOCKS OWNED</th>
+        <th>Number</th>
+        <th>Current Price</th>
+        <th>Total</th>
+    </tr>
+    {% for item in items %}
+    {% if item['stock']=='None' %}
+    {% else %}
+    {% set stock_val = lookup(item['stock']) %}
+    {% if item["num"] != 0 %}
+    <tr>
+        <td>{{stock_val['name']}}</td>
+        <td>{{item["num"]}}</td>
+        <td>${{stock_val['price']}}</td>
+        <td>${{stock_val['price'] * item['num']}}</td>
+    </tr>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    <tr>
+        <td colspan=3>Cash</td>
+        <td>${{items[0]['cash']}}</td>
+    </tr>
+    
+</table>
+<br>
+<hr>
+{% endblock %}
+</div>

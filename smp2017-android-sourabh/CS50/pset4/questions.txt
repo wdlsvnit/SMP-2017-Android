@@ -1,24 +1,38 @@
-1.  TODO
-Stdint is a header file which when included allows us to use data types like uint8_t etc. 
-2.  TODO
-These are not primitive data types but are used to store values which are 8 bit, 16 bit etc
-3.  TODO
-BYTE 8, DWORD 32, WORD16, LONG32
-4.  TODO
-BM
-5.  TODO
-biSize has size of BITMAPINFOHEADER, bfsize has size of complete image.
+0. TODO
+BMP-4 Billion, GIF-256, JPEG-16 Million, PNG-16 Million
+1.TODO
+GIF
+2.TODO
+Lossy compression throws away some of the data in a file. Lossless uses an algorithm to compress a file that is reversible, hence, the quality of the file can move back and forth between the two states.
+3.TODO
+JPEG
+4.TODO
+File Allocation Table; when a file is deleted, the information in the address table is erased, but the file itself remains on the hard drive.
+5.TODO
+Delete files using a secure delete option. That replaces the section on disc with all zeroes.
 6.  TODO
-Pixels are stored top to bottom
+Stdint is a header file which when included allows us to use data types like uint8_t etc. 
 7.  TODO
-biBitCount
+These are not primitive data types but are used to store values which are 8 bit, 16 bit etc
 8.  TODO
-File fails to open
+BYTE 1, DWORD 4, WORD 2, LONG 4
 9.  TODO
+BM
+10.  TODO
+biSize has size of BITMAPINFOHEADER, bfsize has size of complete image.
+11.  TODO
+Pixels are stored top to bottom
+12.  TODO
+biBitCount
+13.  TODO
+File fails to open
+14.  TODO
 Third arguement is how we want to read that amount of data we always want it as once.
-10. TODO
+15. TODO
 3
-11. TODO
+16. TODO
 Sets position of cursor in file
-12. TODO
-It is a value denoting current position of cursor in file
+17. TODO
+It is a value denoting current position of cursor in file.
+18. TODO
+It was Colonel Mustard with the candlestick in the Library.

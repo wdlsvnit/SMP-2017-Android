@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table>
+        <tr>
+            <th>
+                 <h4>Symbol             </h4>
+            </th>
+            <th>
+                <h4>Quantity            </h4>
+            </th>
+            <th>
+                <h4>Price                 </h4>
+            </th>
+            <th>
+                <h4>Value                </h4>
+            </th>
+        </tr>
+    {% for transaction in transactions %}
+        <tr>
+            <td>{{ transaction }}</td>
+            <td>{{ transactions[transaction]["quantity"] }}</td>
+            <td>{{ transactions[transaction]["price"] }}</td>
+            <td>{{ transactions[transaction]["quantity"] * transactions[transaction]["price"] }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    <h2>Cash: {{ cash }}</h2>
+    <h2>Net Value: {{ net }}</h2>
+{% endblock %}

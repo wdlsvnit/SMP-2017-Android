@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table>
+        <tr>
+            <th>
+                 <h4>Symbol             </h4>
+            </th>
+            <th>
+                <h4> Transaction Type</h4>
+            </th>
+            <th>
+                <h4>Quantity            </h4>
+            </th>
+            <th>
+                <h4>Price                 </h4>
+            </th>
+            <th>
+                <h4>Value                </h4>
+            </th>
+            <th>
+                <h4> Date</h4>
+            </th>
+            <th>
+                <h4> Time</h4>
+            </th>
+        </tr>
+    {% for transaction in transactions %}
+        <tr>
+            <td>{{ transaction.symbol }}</td>
+            <td>{{ transaction.transType }}</td>
+            <td>{{ transaction.quantity }}</td>
+            <td>{{ transaction.price }}</td>
+            <td>{{ transaction.price * transaction.quantity}}</td>
+            <td type="date">{{ transactions.date }}</td>
+            <td>{{ transactions.time }}</td>
+        </tr>
+    {% endfor %}
+
+{% endblock %}

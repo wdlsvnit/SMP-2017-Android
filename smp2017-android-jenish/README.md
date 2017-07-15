@@ -1,7 +1,7 @@
 # SMP2017 - Android
 
 ## FrameWork
-* CS50 Solution
+* [CS50 Solution](https://github.com/gdgsurat/SMP-2017-Android/tree/master/smp2017-android-jenish/CS50_Solution)
   * PSET1
   * PSET2
   * PSET3

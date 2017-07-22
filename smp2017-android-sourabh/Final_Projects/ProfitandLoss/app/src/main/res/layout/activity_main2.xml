@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.profitandloss.Main2Activity">
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sales Menu"
+                android:textAllCaps="true"/>
+            <TextView
+                android:id="@+id/invest_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:text="Total Amount Invested: Rs. 0"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/earn_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:text="Total Amount Earned: Rs. 0"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/tax_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:text="Total Tax Deployed: Rs. 0"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/profit_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:text="Net Profit: Rs. 0"
+                android:textStyle="bold">
+            </TextView>
+            <EditText
+                android:id="@+id/current_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name of Current Item"
+                android:inputType="text"
+                android:layout_margin="16dp"
+                />
+            <Spinner
+                android:id="@+id/drop_down_menu"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:entries="@array/country_gst_rates"
+                android:prompt="@string/tax_prompt"
+                />
+            <EditText
+                android:id="@+id/investment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Investment Cost of Current Item"
+                android:inputType="numberDecimal"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"/>
+            <EditText
+                android:id="@+id/sales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Sale Price of Current Item"
+                android:inputType="numberDecimal"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"/>
+            <Button
+                android:id="@+id/submit_gst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:text="Submit"
+                android:onClick="calculateTotal"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

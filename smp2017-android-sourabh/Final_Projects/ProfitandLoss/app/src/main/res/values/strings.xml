@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Profit and Loss</string>
+    <string name="fRequired">Field required</string>
+    <string name="eInvalid">Invalid email</string>
+    <string name="pInvalid">Minimum 8 characters</string>
+    <string name="tax_prompt">Choose Gst Rate</string>
+    <string-array name="country_gst_rates">
+        <item>Choose Gst Rate</item>
+        <item>Item under Tax Exemption Category</item>
+        <item>Item under 5% Tax Category</item>
+        <item>Item under 12% Tax Category</item>
+        <item>Item under 18% Tax Category</item>
+        <item>Item under 28% Tax Category</item>
+    </string-array>
+
+</resources>
